@@ -5,7 +5,11 @@ public class ShoppingCart {
     /*Declare the properties*/
     //TYPE,  TYPE of list, Name
     ArrayList<Product> productsInCart;
-    
+    int numberOfProducts;
+    double totalPrice;
+    double totalDiscount;
+    double finalPrice;
+
     //**Initialize the properties with Constructor
     ShoppingCart(){
         this.productsInCart = new ArrayList<Product>();
@@ -16,8 +20,8 @@ public class ShoppingCart {
     //add a product to the ArrayList productsInCart (ShoppingCart)
     public void addProduct(Product product) {
         this.productsInCart.add(product);
-
         System.out.println(product.name + " added to cart");
+        setCart();
     }
     
     //output the contents of the cart
@@ -67,7 +71,7 @@ public class ShoppingCart {
     }
 
     //calculate total price of cart content ArrayList<Product>
-    private double getTotalPrice(){
+    private double setTotalPrice(){
         double totalPrice = 0.0;
         int numberOfProducts = getNumberOfProducts();
 
