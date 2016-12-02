@@ -39,6 +39,7 @@ public class ShoppingCart {
             return totalPrice*0.9;
         } else { 
             return totalPrice;
+
         }
     }
 }
