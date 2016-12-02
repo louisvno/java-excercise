@@ -18,7 +18,7 @@ public class Product {
         my_cart.addProduct(p2);
         my_cart.addProduct(p2);
         System.out.println(my_cart.toString());
-    }
+}
     
     //declare the properties
     String name;
