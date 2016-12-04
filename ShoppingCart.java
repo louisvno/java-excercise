@@ -101,11 +101,11 @@ public class ShoppingCart {
             }
         };
     }
-    
+
     private void setTotalDiscount(){
        this.totalDiscount = this.discountFivePlusProducts + this.discountFourthProduct;
     }
-    
+
     //calculate total price of cart content ArrayList<Product>
     private void setTotalPrice(){
         double totalPrice = 0.0;
